@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in — Mesa Restaurant Analytics</title>
+<meta name="description" content="Mesa sign-in screen.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314140f'/><text x='16' y='23' font-family='sans-serif' font-size='18' font-weight='700' fill='%23fff' text-anchor='middle'>M</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="center-page">
+  <div>
+    <div class="center-card">
+      <div class="brand">
+        <div class="brand-mark">M</div>
+        <div>
+          <div class="brand-name">Mesa</div>
+          <div class="brand-sub">Restaurant analytics</div>
+        </div>
+      </div>
+
+      <h1>Sign in</h1>
+      <p class="lead">Use the account your manager set up for the venue.</p>
+
+      <form class="form" onsubmit="event.preventDefault(); location.href='index.html';">
+        <label class="field"><span>Email</span>
+          <input type="email" value="marta@bellatrattoria.com" autocomplete="username" required>
+        </label>
+        <label class="field"><span>Password</span>
+          <input type="password" value="demo-password" autocomplete="current-password" required>
+        </label>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+    <p class="center-foot">Demo template — any credentials open the dashboard.</p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

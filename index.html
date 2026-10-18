@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview — Mesa Restaurant Analytics</title>
+<meta name="description" content="Mesa — a restaurant analytics dashboard template. Revenue, covers, average check, peak hours and menu performance in one screen.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2314140f'/><text x='16' y='23' font-family='sans-serif' font-size='18' font-weight='700' fill='%23fff' text-anchor='middle'>M</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- ===================== sidebar ===================== -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">M</div>
+      <div>
+        <div class="brand-name">Mesa</div>
+        <div class="brand-sub">Bella Trattoria</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="nav-group">
+        <div class="nav-label">Analytics</div>
+        <nav class="nav">
+          <a href="index.html" class="is-active"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-5H3zM13 8h8V3h-8z"/></svg>Overview</a>
+          <a href="sales.html"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg>Sales</a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M4 3v18M4 3c3 0 3 7 0 7M12 3v18M16 3v7a2 2 0 0 0 4 0V3M18 10v11"/></svg>Menu<span class="nav-pro">Pro</span></a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M6 2h12l2 5H4zM5 7v13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7M9 12h6"/></svg>Orders<span class="nav-pro">Pro</span></a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>P&amp;L<span class="nav-pro">Pro</span></a>
+        </nav>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Operations</div>
+        <nav class="nav">
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M1 7h12v9H1zM13 10h4l3 3v3h-7zM5.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM17.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>Delivery<span class="nav-pro">Pro</span></a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.9"/></svg>Customers<span class="nav-pro">Pro</span></a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M20 7h-5V4H9v3H4v14h16zM9 12h6M9 16h6"/></svg>Staff<span class="nav-pro">Pro</span></a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></svg>Inventory<span class="nav-pro">Pro</span></a>
+          <a href="https://payhip.com/b/C8O71" class="is-locked" target="_blank" rel="noopener" title="In the full template"><svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-2.7 1.1V21a2 2 0 1 1-4 0v-.1A1.6 1.6 0 0 0 7.5 19l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.6 1.6 0 0 0 3 13.6a2 2 0 1 1 0-4 1.6 1.6 0 0 0 1.9-1.1l.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.6 1.6 0 0 0 10.4 3a2 2 0 1 1 4 0 1.6 1.6 0 0 0 2.7 1.1l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0 1.1 2.7 2 2 0 1 1 0 4 1.6 1.6 0 0 0-1.6 1.4z"/></svg>Settings<span class="nav-pro">Pro</span></a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="sidebar-foot">Mesa Lite — 2 of 12 pages<br><a href="https://payhip.com/b/C8O71" target="_blank" rel="noopener">Get the full template</a></div>
+  </aside>
+
+  <!-- ===================== main ===================== -->
+  <div class="main">
+
+    <header class="topbar">
+      <button class="btn btn-icon burger" data-nav-toggle aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <div>
+        <h1>Overview</h1>
+        <div class="sub">Tuesday, 30 September · service in progress</div>
+      </div>
+
+      <div class="topbar-actions">
+        <div class="filters">
+          <div class="seg" role="group" aria-label="Date range">
+            <button type="button" aria-pressed="false">Today</button>
+            <button type="button" aria-pressed="true">7 days</button>
+            <button type="button" aria-pressed="false">30 days</button>
+          </div>
+        </div>
+        <button class="btn btn-icon" data-theme-toggle aria-label="Switch theme">
+          <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="btn" data-export>
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span class="btn-label">Export</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <!-- KPI tiles -->
+      <section class="row row-4">
+        <div class="card" id="kpi-revenue"></div>
+        <div class="card" id="kpi-orders"></div>
+        <div class="card" id="kpi-check"></div>
+        <div class="card" id="kpi-covers"></div>
+      </section>
+
+      <!-- revenue + split -->
+      <section class="row row-2-1">
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title">Revenue</h2>
+              <div class="card-sub">Daily net revenue, last 30 days</div>
+            </div>
+          </div>
+          <div id="chart-revenue"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title">Where revenue comes from</h2>
+              <div class="card-sub">This month</div>
+            </div>
+          </div>
+          <div id="chart-split"></div>
+          <div id="legend-split"></div>
+        </div>
+      </section>
+
+      <!-- heatmap + top dishes -->
+      <section class="row row-2-1">
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title">When the room fills up</h2>
+              <div class="card-sub">Orders by hour and weekday, 4-week average</div>
+            </div>
+          </div>
+          <div id="chart-heat"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title">Top dishes</h2>
+              <div class="card-sub">By revenue, this month</div>
+            </div>
+          </div>
+          <div id="chart-dishes"></div>
+        </div>
+      </section>
+
+      <!-- channels + average check -->
+      <section class="row row-2">
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title">Revenue by channel</h2>
+              <div class="card-sub">Last 7 days</div>
+            </div>
+          </div>
+          <div id="chart-channels"></div>
+          <div id="legend-channels"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div>
+              <h2 class="card-title">Average check</h2>
+              <div class="card-sub">Dine-in vs delivery, last 12 weeks</div>
+            </div>
+            <div class="right" id="check-delta"></div>
+          </div>
+          <div id="chart-check"></div>
+        </div>
+      </section>
+
+      <!-- orders -->
+      <section class="card">
+        <div class="card-head">
+          <div>
+            <h2 class="card-title">Latest orders</h2>
+            <div class="card-sub">Live feed from the floor</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order</th><th>Time</th><th>Channel</th><th>Table</th>
+                <th class="num">Guests</th><th class="num">Items</th><th class="num">Total</th><th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="orders-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const C = DATA.currency;
+
+  UI.kpi('#kpi-revenue', { label: 'Revenue today',  value: UI.money(DATA.kpi.revenue.value),  delta: DATA.kpi.revenue.delta,  spark: DATA.kpi.revenue.spark,  color: '--s1' });
+  UI.kpi('#kpi-orders',  { label: 'Orders',         value: DATA.kpi.orders.value,             delta: DATA.kpi.orders.delta,   spark: DATA.kpi.orders.spark,   color: '--s2' });
+  UI.kpi('#kpi-check',   { label: 'Average check',  value: UI.money(DATA.kpi.avgCheck.value, 2), delta: DATA.kpi.avgCheck.delta, spark: DATA.kpi.avgCheck.spark, color: '--s3' });
+  UI.kpi('#kpi-covers',  { label: 'Covers',         value: DATA.kpi.covers.value,             delta: DATA.kpi.covers.delta,   spark: DATA.kpi.covers.spark,   color: '--s4' });
+
+  Mesa.line('#chart-revenue', {
+    labels: DATA.revenue30.labels,
+    series: [{ name: 'Revenue', color: '--s1', values: DATA.revenue30.values }],
+    currency: C, height: 268
+  });
+
+  Mesa.donut('#chart-split', {
+    items: DATA.channelSplit, height: 212, currency: C,
+    centerLabel: Mesa.fmt(DATA.channelSplit.reduce((a, d) => a + d.value, 0), { currency: C, compact: true }),
+    centerSub: 'this month'
+  });
+  UI.legend('#legend-split', DATA.channelSplit);
+
+  UI.heatmap('#chart-heat', DATA.heat);
+
+  Mesa.ranked('#chart-dishes', { items: DATA.topDishes, currency: C, color: '--s1' });
+
+  Mesa.bars('#chart-channels', {
+    labels: DATA.channels.labels, series: DATA.channels.series,
+    stacked: true, currency: C, height: 252
+  });
+  UI.legend('#legend-channels', DATA.channels.series);
+
+  // Two averages at different levels flatten each other on one pair of axes, so this
+  // is small multiples instead: every row keeps its own scale and reads on its own.
+  (() => {
+    const [dine, del] = DATA.avgCheckTrend.series;
+    const gap = dine.values.map((v, i) => +(v - del.values[i]).toFixed(2));
+    UI.trendRows('#chart-check', {
+      currency: C, decimals: 2,
+      rows: [
+        { name: dine.name, color: dine.color, values: dine.values },
+        { name: del.name,  color: del.color,  values: del.values },
+        { name: 'Gap', values: gap, derived: true }
+      ]
+    });
+    document.querySelector('#check-delta').innerHTML =
+      `<span class="pill">${DATA.avgCheckTrend.labels[0]} → ` +
+      `${DATA.avgCheckTrend.labels[DATA.avgCheckTrend.labels.length - 1]}</span>`;
+  })();
+
+  UI.ordersTable('#orders-body', DATA.orders);
+
+  // segmented date filter — demo only, swaps the headline range label
+  document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+    b.parentElement.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', 'false'));
+    b.setAttribute('aria-pressed', 'true');
+  }));
+</script>
+</body>
+</html>
