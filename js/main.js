@@ -24,7 +24,9 @@
       const next = dark ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
       try { localStorage.setItem(KEY, next); } catch (e) { /* ignore */ }
-      if (window.Mesa) Mesa.redrawAll();   // charts re-read their CSS variables
+      /* charts re-read their CSS variables. `Mesa` is declared with `const`,
+         so it is NOT a property of `window` — test the binding itself. */
+      if (typeof Mesa !== 'undefined') Mesa.redrawAll();
     });
   });
 })();
